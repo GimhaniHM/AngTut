@@ -1,0 +1,22 @@
+<!-- create 3 buttons to view the employee details -->
+<div>
+    <button type="button" (click)='getempInfo1()'>Employee1</button>
+    <ul class="list-group">
+        <!-- we have to bind the data with the button-->
+        <li  *ngFor = "let info of emp1_info" class="list-group-item d-flex justify-content-between align-items-center" > {{info}} </li>
+    </ul>
+</div>
+
+<div>
+    <button type="button" (click)='getempInfo2()'>Employee2</button>
+    <ul class="list-group">
+        <li  *ngFor = "let info of emp2_info" class="list-group-item d-flex justify-content-between align-items-center" > {{info}} </li>
+    </ul>
+</div>
+
+<div>
+    <button type="button" (click)='getempInfo3()'>Employee3</button>
+    <ul class="list-group">
+        <li  *ngFor = "let info of emp3_info" class="list-group-item d-flex justify-content-between align-items-center" > {{info}} </li>
+    </ul>
+</div>
